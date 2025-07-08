@@ -1,0 +1,14 @@
+<p>ifelse works!</p>
+
+<h1 *ngIf="show; then ifBlock else elseBlock">Showing</h1>
+
+<ng-template #ifBlock>
+    <h2>if showing</h2>
+</ng-template>
+<ng-template #elseBlock>
+    <h2>else showing</h2>
+</ng-template>dd
+
+<ng-template [ngIf]="color==='red'">
+    <h2 >Color is {{color}}</h2>
+</ng-template> 
